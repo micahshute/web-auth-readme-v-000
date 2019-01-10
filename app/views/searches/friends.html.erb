@@ -1,1 +1,10 @@
 
+<% if @friends.length > 0 %>
+    <ul>
+        <% @freinds.each do |friend| %>
+            <li><%= "#{friend['firstName']} #{freind['lastName']}" %></li>
+        <% end %>
+    </ul>
+<% else %>
+    <p>Looks like you have no friends.</p>
+<% end %>
